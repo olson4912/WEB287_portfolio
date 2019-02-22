@@ -33,3 +33,33 @@ h2 {
   font-size: 2em;
   font-weight: 600;
 }
+
+aside {
+	grid-area: sidebar;
+	background-color: #005f73;
+	color: #fff;
+}
+
+aside h1 {
+	font-family: 'Eczar', serif;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+footer {
+	grid-area: footer;
+	background-color: #005f73;
+	color: #fff;
+}
+
+footer p {
+	font-size: 1.3em;
+}
