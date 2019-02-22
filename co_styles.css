@@ -14,6 +14,8 @@ time, mark, audio, video {
 	list-style-type: none;
 }
 
+/* Non-layout Styles */
+
 body {
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -25,6 +27,9 @@ h1 {
   color: #003742;
   font-size: 3em;
   font-weight: 600;
+	border-bottom: 3px solid #003742;
+	line-height: 1.1em;
+	margin-bottom: .5em;
 }
 
 h2 {
@@ -38,28 +43,161 @@ aside {
 	grid-area: sidebar;
 	background-color: #005f73;
 	color: #fff;
+	padding: 3%;
 }
 
-aside h1 {
+.sideInner {
+	position: static;
+	width: 100%;
+}
+
+.coPic {
+	grid-area: portrait;
+	width: 30%;
+	margin: 0 auto;
+}
+
+.coPic img {
+	width: 100%;
+}
+
+.sideText {
+	grid-area: title;
+	text-align: center;
+}
+
+.sideText h1 {
+	color: #fff;
+	font-size: 2.3em;
+	border: none;
+	margin-bottom: 0;
+}
+
+.sideText p {
+	font-size: 1.4em;
+}
+
+#mainNav {
+	grid-area: navigation;
+	width: 80%;
+	margin: 6% auto;
+}
+
+#mainNav ul li {
 	font-family: 'Eczar', serif;
 	color: #fff;
-	font-size: 2.5em;
+	font-size: 1.9em;
+	line-height: 1.5em;
+	text-align: center;
+	border-bottom: 1px solid #fff;
 }
 
+#mainNav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
 
+#mainNav ul li a:hover {
+	color: #8b00cc;
+}
 
+#mainNav ul li.active {
+	background-color: #8b00cc;
+}
 
+.firstList {
+	border-top: 1px solid #fff;
+}
 
+section {
+	grid-area: content;
+	background-color: #fff;
+	padding: 5%;
+}
 
-
-
+section p {
+	margin-bottom: 1em;
+}
 
 footer {
 	grid-area: footer;
 	background-color: #005f73;
 	color: #fff;
+	padding: 1.7%;
 }
 
 footer p {
 	font-size: 1.3em;
+	text-align: right;
+}
+
+/* Layout Styles */
+
+@media screen and (min-width: 900px) {
+
+	.sideInner {
+		display: grid;
+		grid-template-columns: 1fr 2fr 2fr;
+		ms-grid-columns: 1fr 2fr 2fr;
+		grid-template-areas: "portrait title navigation";
+	}
+
+	.coPic {
+		width: 100%;
+	}
+
+	.sideText {
+		margin-top: 20%;
+	}
+
+	#mainNav {
+		margin: 6% 0 0 auto;
+		width: 70%;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	body {
+		display: grid;
+		grid-template-columns: 320px auto;
+		ms-grid-columns: 320px auto;
+		grid-template-areas:
+		"sidebar content"
+		"sidebar footer";
+	}
+
+	aside {
+		padding: 0;
+	}
+
+	.sideInner {
+		width: 300px;
+		position: fixed;
+		margin-left: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		ms-grid-columns: 1fr;
+		grid-template-areas:
+		"portrait"
+		"title"
+		"navigation";
+	}
+
+	.coPic {
+		width: 65%;
+	}
+
+	.sideText {
+		margin-top: 5%;
+	}
+
+	#mainNav {
+		width: 80%;
+		margin: 20% auto;
+	}
+
 }
