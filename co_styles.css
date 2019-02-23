@@ -157,6 +157,58 @@ a.proButton {
 	margin-bottom: 4%;
 }
 
+a.resButton {
+	display: inline-block;
+	color: #fff;
+	background-color: #005f73;
+	font-family: 'Eczar', serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	text-align: center;
+	text-decoration: none;
+	padding: .2em;
+	width: 50%;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	border-radius: 10px;
+}
+
+.boxOutline {
+	border: 2px solid #003742;
+	padding: 1em 2em;
+}
+
+.boxOutline ul {
+	list-style: square outside url(images/diamond.png);
+	font-size: 1.3em;
+	margin-top: .5em;
+}
+
+.sk1 {
+	grid-area: skills1;
+}
+
+.sk2 {
+	grid-area: skills2;
+}
+
+.sk3 {
+	grid-area: skills3;
+}
+
+.resumeList ul {
+	list-style: square inside url(images/diamond.png);
+	margin-bottom: 3%;
+}
+
+.resumeList ul li {
+	margin-bottom: 1em;
+}
+
+.historyM {
+	margin-bottom: 3%;
+}
+
 footer {
 	grid-area: footer;
 	background-color: #005f73;
@@ -180,6 +232,10 @@ footer p {
 	"half-picture"
 	"half-text";
 	margin-bottom: 5%;
+}
+
+.historyD {
+	display: none;
 }
 
 @media screen and (min-width: 900px) {
@@ -211,6 +267,28 @@ footer p {
 		"project-title project-title"
 		"half-text half-picture";
 	}
+
+	.boxOutline {
+		display: grid;
+		grid-template-columns: 3fr 7fr 5fr;
+		ms-grid-columns: 3fr 7fr 5fr;
+		grid-template-areas: "skills1 skills2 skills3";
+		margin-bottom: 5%;
+	}
+
+	.historyM {
+		display: none;
+	}
+
+	.historyD {
+		display: block;
+		margin-bottom: 3%;
+	}
+
+	table.history {
+		width: 95%;
+	}
+
 
 }
 
@@ -256,7 +334,5 @@ footer p {
 		width: 80%;
 		margin: 20% auto;
 	}
-
-
 
 }
