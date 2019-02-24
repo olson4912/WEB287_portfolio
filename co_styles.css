@@ -16,10 +16,16 @@ time, mark, audio, video {
 
 /* Non-layout Styles */
 
+html {
+	background-color: #003742;
+}
+
 body {
   background-color: #fff;
   font-family: 'Raleway', sans-serif;
   color: #000;
+	max-width: 1900px;
+	margin: 0 auto;
 }
 
 h1 {
@@ -119,6 +125,38 @@ section p {
 	margin-bottom: 1em;
 }
 
+.noPad {
+	padding: 0;
+}
+
+.homePage {
+	background-color: #005f73;
+	width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.withBg {
+	position: relative;
+  width: 100%;
+  height: 800px;
+  display: block;
+  background: url(images/home-image2.jpg)  center center no-repeat;
+  background-size: auto 100%;
+	padding: 10% 0;
+}
+
+.homeText h1 {
+	color: #fff !important;
+	border: 0;
+}
+
+.homeText p {
+	color: #fff !important;
+	font-size: 1.5em;
+	padding: 0 7em;
+}
+
 .proPic {
 	grid-area: half-picture;
 }
@@ -155,6 +193,12 @@ a.proButton {
 .dashedLine {
 	border-top: 3px dashed #003742;
 	margin-bottom: 4%;
+}
+
+.marginText {
+	display: block;
+	width: 70%;
+	margin: 10% auto 20% auto;
 }
 
 a.resButton {
@@ -209,6 +253,23 @@ a.resButton {
 	margin-bottom: 3%;
 }
 
+.conPic {
+	grid-area: contact-pic;
+}
+
+.conPic img {
+	width: 100%;
+}
+
+.conText {
+	grid-area: contact-info;
+	margin-top: 2em;
+}
+
+.conText p {
+	font-size: 1.7em;
+}
+
 footer {
 	grid-area: footer;
 	background-color: #005f73;
@@ -236,6 +297,16 @@ footer p {
 
 .historyD {
 	display: none;
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: 1fr;
+	ms-grid-columns: 1fr;
+	grid-template-areas:
+	"contact-info"
+	"contact-pic";
+	margin-bottom: 5%;
 }
 
 @media screen and (min-width: 900px) {
@@ -289,7 +360,12 @@ footer p {
 		width: 95%;
 	}
 
-
+	.contact {
+		grid-template-columns: 1fr 1fr;
+		ms-grid-columns: 1fr 1fr;
+		grid-template-areas: "contact-info contact-pic";
+		margin: 10% 0 15% 0;
+	}
 }
 
 @media screen and (min-width: 1200px) {
