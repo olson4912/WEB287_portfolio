@@ -125,6 +125,14 @@ section p {
 	margin-bottom: 1em;
 }
 
+section a {
+	color: #017eac;
+}
+
+section a:hover {
+	color: #6f00a2;
+}
+
 .noPad {
 	padding: 0;
 }
