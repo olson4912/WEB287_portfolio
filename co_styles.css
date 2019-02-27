@@ -420,3 +420,112 @@ footer p {
 	}
 
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	body {
+		display: block;
+	}
+
+	aside {
+		background-color: #005f73;
+		color: #fff;
+		display: block;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.sideInner {
+		display: block;
+		width: 100%;
+		padding: 2% 2% 7% 2%;
+		margin: 0;
+		position: static;
+	}
+
+	.coPic {
+		display: block;
+		float: left;
+		width: 15%;
+		margin: 0 auto;
+	}
+
+	.coPic img {
+		width: 100%;
+	}
+
+	.sideText {
+		display: block;
+		float: left;
+		width: 30%;
+		text-align: center;
+	}
+
+	#mainNav {
+		display: block;
+		float: right;
+		width: 30%;
+		margin: 0;
+		margin-bottom: 30px;
+	}
+
+	#mainNav ul {
+		padding-right: 100px;
+	}
+
+	.withBg {
+		height: 600px;
+	}
+
+	section {
+		display: block;
+	}
+
+	.project {
+		display: block;
+		overflow: hidden;
+	}
+
+	.contact {
+		display: block;
+		overflow: hidden;
+		margin: 5% auto;
+	}
+
+	.proPic, .conPic {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+
+	.proText, .conText {
+		display: block;
+		float: left;
+		width: 45%;
+		margin-top: 50pxS;
+	}
+
+	.boxOutline {
+		display: block;
+		overflow: hidden;
+	}
+
+	.sk1 {
+		display: block;
+		float: left;
+		width: 15%;
+	}
+
+	.sk2 {
+		display: block;
+		float: left;
+		width: 40%;
+	}
+
+	.sk3 {
+		display: block;
+		float: left;
+		width: 40%;
+	}
+
+}
