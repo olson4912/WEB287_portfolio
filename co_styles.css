@@ -215,7 +215,7 @@ a.proButton {
 	font-size: 1.5em;
 	text-align: center;
 	text-decoration: none;
-	padding: .5em;
+	padding: .2em;
 	width: 70%;
 	margin-top: 3%;
 	margin-left: 14%;
@@ -369,7 +369,16 @@ footer p {
 	margin-bottom: 5%;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
+
+	h2 {
+		line-height: 1em;
+		margin: 7% auto;
+	}
+
+	section p {
+		font-size: 1.2em;
+	}
 
 	.coPic {
 		display: none;
@@ -411,6 +420,19 @@ footer p {
 
 	a.resButton {
 		width: 95%;
+	}
+
+	a.proButton {
+		width: 95%;
+		margin: 3% auto;
+	}
+
+	.marginText {
+		width: 90%;
+	}
+
+	.resumeList ul li {
+		font-size: 1.2em;
 	}
 
 }
