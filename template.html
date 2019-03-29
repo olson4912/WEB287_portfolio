@@ -9,7 +9,7 @@
   <meta name="description" content="Portfolio site for Christine Olson, Web Developer and Designer">
   <meta name="keywords" content="Web Designer, Web Developer, Website Design">
   <meta name="author" content="Christine Olson">
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Christine Olson</title>
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800" rel="stylesheet">
@@ -20,18 +20,19 @@
 <body>
 <aside>
   <div class="sideInner">
+    <div class="hamburger"><a class="toggle open" href="#mainNav"><img src="images/icon-white.png" alt="Open Menu" /></a></div>
     <div class="coPic"><img src="images/christine-oval.png" alt="Picture of Christine Olson" /></div>
     <div class="sideText">
       <h1>Christine Olson</h1>
       <p>Web Development<br>& Design</p>
     </div>
-    <div id="mainNav">
+    <div id="mainNav" role="navigation">
+      <a class="toggle close" href="#">X</a>
       <ul>
-        <li class="firstList"><a href="index.html">Home</a></li>
+        <li class="current">Home</li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="https://christinewplearn.wordpress.com/" target="_blank">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>

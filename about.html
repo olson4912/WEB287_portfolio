@@ -9,7 +9,7 @@
   <meta name="description" content="Portfolio site for Christine Olson, Web Developer and Designer">
   <meta name="keywords" content="Web Designer, Web Developer, Website Design">
   <meta name="author" content="Christine Olson">
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Christine Olson</title>
   <link href="https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800" rel="stylesheet">
@@ -20,18 +20,19 @@
 <body>
 <aside>
   <div class="sideInner">
+    <div class="hamburger"><a class="toggle open" href="#mainNav"><img src="images/icon-white.png" alt="Open Menu" /></a></div>
     <div class="coPic"><img src="images/christine-oval.png" alt="Picture of Christine Olson" /></div>
     <div class="sideText">
       <h1>Christine Olson</h1>
       <p>Web Development<br>& Design</p>
     </div>
-    <div id="mainNav">
+    <div id="mainNav" role="navigation">
+      <a class="toggle close" href="#">X</a>
       <ul>
-        <li class="firstList"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li class="current">About</li>
         <li><a href="resume.html">Resume</a></li>
-        <li><a href="https://christinewplearn.wordpress.com/" target="_blank">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -41,18 +42,13 @@
 <section>
   <h1>About Me</h1>
   <div class="marginText">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum, nulla sit amet consequat egestas, velit eros
-    lobortis dui, vel dictum tortor diam at mauris. Duis elit dui, ullamcorper nec semper sed, eleifend at sapien.
-    Sed facilisis orci in mauris molestie iaculis. Donec nec aliquet odio. Aliquam tempor purus ac metus laoreet imperdiet
-    convallis vel tellus. Aliquam finibus nunc eget nisi gravida tristique. Quisque dapibus, massa vel mollis aliquam,
-    mauris mi aliquam sem, nec ornare massa libero sed lacus.</p>
-  <p>Suspendisse nec elit porttitor, maximus massa sed, blandit sem. Donec malesuada magna at nisi mattis maximus sit amet
-    venenatis nisi. Integer at mi eget diam dictum semper. Aliquam dapibus metus sit amet commodo malesuada. Etiam finibus
-    dolor diam, quis mattis massa laoreet eu. Sed interdum aliquet erat, ut faucibus lacus. Phasellus semper massa at ligula
-    celerisque tempor. Suspendisse accumsan nisi vitae lectus tincidunt, sit amet luctus turpis ullamcorper. Aliquam euismod,
-    orci elementum tincidunt viverra, nisl urna facilisis enim, aliquet condimentum diam nibh pulvinar nibh. Etiam in sapien ac
-    magna iaculis mollis vitae at arcu. Maecenas egestas interdum quam, sit amet eleifend erat lobortis non. In et elit sed
-    orci tempus blandit. </p>
+  <p>My path to become a web developer and designer has been an interesting process.  I started out working in the theatre
+    as a costumer and then transitioned to nonprofit administration. This background gave me an understanding of design principals
+    and the day to day challenges that organizations go through.</p>
+  <p>I love web design and development because it's possible to take the blank canvas of a browser and create almost anything,
+    depending on the instructions you give it.  I enjoy coding and learning new front-end frameworks. This is an exciting time to
+    be in this field because there are so many new things to learn.</p>
+  <a href="https://christinewplearn.wordpress.com/" class="proButton" target="_blank">Read My Blog</a>
   </div>
 </section>
 
