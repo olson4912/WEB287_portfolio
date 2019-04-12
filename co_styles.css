@@ -146,14 +146,14 @@ section {
 	padding: 5%;
 }
 
-@keyframes example {
+@keyframes appear {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
 
 #fadeIn {
 	opacity: 0;
-	animation: .7s ease-in 0s 1 example;
+	animation: .7s ease-in 0s 1 appear;
 	animation-fill-mode: forwards;
 }
 
@@ -199,7 +199,57 @@ section a:hover {
 .homeText p {
 	color: #fff !important;
 	font-size: 1.5em;
-	padding: 0 10%;
+	font-weight: 600;
+}
+
+@keyframes appear1 {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes appear2 {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes bgColor {
+	0% { background-color: transparent; }
+	100% { background-color: rgba(0,55,66,.5); }
+}
+
+.load1 {
+	opacity: 0;
+	animation: .7s ease-in 0s 1 appear1;
+	animation-fill-mode: forwards;
+}
+
+.load2 {
+	opacity: 0;
+	animation: .7s ease-in 2.5s 1 appear2;
+	animation-fill-mode: forwards;
+}
+
+.homeText {
+	width: 90%;
+	margin: 0 auto;
+	background-color: transparent;
+	padding: 2%;
+	border-radius: 30px;
+	animation: .7s ease-in 2.5s 1 bgColor;
+	animation-fill-mode: forwards;
+}
+
+.load2 a {
+	display: block;
+	width: 75%;
+	color: #fff !important;
+	font-family: 'Eczar', serif;
+	font-weight: 500;
+	font-size: 1.7em;
+	text-decoration: none;
+	margin: 10px auto;
+	border: 2px solid #fff;
+	border-radius: 10px;
 }
 
 .proPic {
@@ -243,7 +293,11 @@ a.proButton {
 .marginText {
 	display: block;
 	width: 70%;
-	margin: 10% auto;
+	margin: 10% auto 5% auto;
+}
+
+.centerVid {
+	text-align: center;
 }
 
 a.resButton {
@@ -542,6 +596,14 @@ footer p {
 		animation-fill-mode: forwards;
 	}
 
+	.homeText {
+		width: 85%;
+	}
+
+	.load2 a {
+		width: 55%;
+	}
+
 	.project {
 		grid-template-columns: 1fr 1fr;
 		ms-grid-columns: 1fr 1fr;
@@ -640,6 +702,9 @@ footer p {
 		margin-top: 5%;
 	}
 
+	.homeText {
+		width: 80%;
+	}
 
 
 }
