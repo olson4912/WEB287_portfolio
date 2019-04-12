@@ -133,6 +133,7 @@ a.close {
 
 #mainNav ul li:hover {
 	background-color: #003742;
+	transition: 1s;
 }
 
 #mainNav ul li.current {
@@ -145,6 +146,17 @@ section {
 	padding: 5%;
 }
 
+@keyframes example {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+#fadeIn {
+	opacity: 0;
+	animation: .7s ease-in 0s 1 example;
+	animation-fill-mode: forwards;
+}
+
 section p {
 	margin-bottom: 1em;
 }
@@ -154,7 +166,8 @@ section a {
 }
 
 section a:hover {
-	background-color: #6f00a2;
+	background-color: #5f008c;
+	transition: .5s;
 }
 
 .noPad {
@@ -518,9 +531,15 @@ footer p {
 		padding: 0 1em 0 0 ;
 	}
 
+	@keyframes menuSel {
+		0% { border-right: 7px solid #005f73; }
+		100% { border-right: 7px solid #5f008c; }
+	}
+
 	#mainNav ul li.current {
-		border-right: 7px solid #5f008c;
-		background-color: #003742;
+		border-right: 7px solid #005f73;
+		animation: .2s ease-in 0s 1 menuSel;
+		animation-fill-mode: forwards;
 	}
 
 	.project {
@@ -598,14 +617,19 @@ footer p {
 	#mainNav ul li {
 		padding-left: 1em;
 		border-left: 7px solid #005f73;
-		border-right: 0;
+		border-right: 7px solid #005f73;
 		text-align: left;
 	}
 
+	@keyframes menuSelW {
+		0% { border-left: 7px solid #005f73; }
+		100% { border-left: 7px solid #5f008c; }
+	}
+
 	#mainNav ul li.current {
-		border-left: 7px solid #6f00a2;
-		border-right: 0;
-		background-color: #003742;
+		border-left: 7px solid #005f73;
+		animation: .2s ease-in 0s 1 menuSelW;
+		animation-fill-mode: forwards;
 	}
 
 	.coPic {
