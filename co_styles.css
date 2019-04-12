@@ -293,7 +293,11 @@ a.proButton {
 .marginText {
 	display: block;
 	width: 70%;
-	margin: 10% auto 5% auto;
+	margin: 5% auto;
+}
+
+.marginText p {
+	font-size: 1.2em;
 }
 
 .centerVid {
@@ -386,6 +390,11 @@ a.conButton {
 
 a.iconLink:hover {
 	background-color: #fff;
+}
+
+a.elink:hover {
+	background-color: #fff;
+	color: #5f008c;
 }
 
 footer {
