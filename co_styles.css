@@ -225,7 +225,7 @@ section a:hover {
 
 .load2 {
 	opacity: 0;
-	animation: .7s ease-in 2s 1 appear2;
+	animation: .7s ease-in 1.25s 1 appear2;
 	animation-fill-mode: forwards;
 }
 
@@ -235,7 +235,7 @@ section a:hover {
 	background-color: transparent;
 	padding: 2%;
 	border-radius: 50px;
-	animation: .7s ease-in 2s 1 bgColor;
+	animation: .7s ease-in 1.25s 1 bgColor;
 	animation-fill-mode: forwards;
 }
 
@@ -517,6 +517,10 @@ footer p {
 		font-size: 1.2em;
 	}
 
+	.conText p {
+		font-size: 1.4em;
+	}
+
 }
 @media screen and (max-width: 899px) {
 
@@ -534,8 +538,6 @@ footer p {
   }
 
 }
-
-
 
 @media screen and (min-width: 700px) {
 
@@ -723,6 +725,16 @@ footer p {
 
 	.homeText {
 		width: 80%;
+	}
+
+
+
+	.resTop {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		ms-grid-columns: 1fr 1fr;
+		grid-template-areas: "contact-info contact-pic";
+		margin: 10% 0 5% 0;
 	}
 
 
