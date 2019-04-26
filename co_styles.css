@@ -727,17 +727,6 @@ footer p {
 		width: 80%;
 	}
 
-
-
-	.resTop {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		ms-grid-columns: 1fr 1fr;
-		grid-template-areas: "contact-info contact-pic";
-		margin: 10% 0 5% 0;
-	}
-
-
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
