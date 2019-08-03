@@ -292,7 +292,7 @@ a.proButton {
 
 .marginText {
 	display: block;
-	width: 70%;
+	width: 80%;
 	margin: 5% auto;
 }
 
@@ -349,12 +349,12 @@ a.resButton {
 	grid-area: skills3;
 }
 
-.resumeList ul {
+.itemList ul {
 	list-style: square inside url(images/diamond.png);
 	margin-bottom: 3%;
 }
 
-.resumeList ul li {
+.itemList ul li {
 	margin-bottom: 1em;
 }
 
@@ -379,18 +379,18 @@ a.resButton {
 	font-size: 1.7em;
 }
 
-a.conButton {
+a.largeButton {
 	display: inline-block;
 	color: #fff;
 	background-color: #005f73;
 	font-family: 'Eczar', serif;
 	font-weight: 600;
-	font-size: 1em;
+	font-size: 1.5em;
 	text-align: center;
 	text-decoration: none;
 	padding: .2em;
-	width: 70%;
-	margin-top: 5%;
+	width: 60%;
+	margin: 5% auto;
 	border-radius: 10px;
 }
 
