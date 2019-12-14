@@ -219,13 +219,13 @@ section a:hover {
 
 .load1 {
 	opacity: 0;
-	animation: .7s ease-in 1.25s 1 appear1;
+	animation: .7s ease-in .5s 1 appear1;
 	animation-fill-mode: forwards;
 }
 
 .load2 {
 	opacity: 0;
-	animation: .7s ease-in 1.75s 1 appear2;
+	animation: .7s ease-in 1s 1 appear2;
 	animation-fill-mode: forwards;
 }
 
@@ -235,7 +235,7 @@ section a:hover {
 	background-color: transparent;
 	padding: 2%;
 	border-radius: 50px;
-	animation: .7s ease-in 1.25s 1 bgColor;
+	animation: .7s ease-in 1s 1 bgColor;
 	animation-fill-mode: forwards;
 }
 
