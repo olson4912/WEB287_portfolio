@@ -16,6 +16,16 @@ time, mark, audio, video {
 
 /* Non-layout Styles */
 
+.withBg {
+	position: relative;
+  width: 100%;
+  height: 800px;
+  display: block;
+  background: url(images/home-image2.jpg)  center center no-repeat;
+  background-size: auto 100%;
+	padding: 10% 0;
+}
+
 html {
 	background-color: #003742;
 }
@@ -159,6 +169,7 @@ section {
 
 section p {
 	margin-bottom: 1em;
+	line-height: 1.35em;
 }
 
 section a {
@@ -179,16 +190,6 @@ section a:hover {
 	width: 100%;
   text-align: center;
   overflow: hidden;
-}
-
-.withBg {
-	position: relative;
-  width: 100%;
-  height: 800px;
-  display: block;
-  background: url(images/home-image2.jpg)  center center no-repeat;
-  background-size: auto 100%;
-	padding: 10% 0;
 }
 
 .homeText h1 {
@@ -219,13 +220,13 @@ section a:hover {
 
 .load1 {
 	opacity: 0;
-	animation: .7s ease-in 0s 1 appear1;
+	animation: .7s ease-in .5s 1 appear1;
 	animation-fill-mode: forwards;
 }
 
 .load2 {
 	opacity: 0;
-	animation: .7s ease-in 1.25s 1 appear2;
+	animation: .7s ease-in 1s 1 appear2;
 	animation-fill-mode: forwards;
 }
 
@@ -235,7 +236,7 @@ section a:hover {
 	background-color: transparent;
 	padding: 2%;
 	border-radius: 50px;
-	animation: .7s ease-in 1.25s 1 bgColor;
+	animation: .7s ease-in 1s 1 bgColor;
 	animation-fill-mode: forwards;
 }
 
@@ -292,7 +293,7 @@ a.proButton {
 
 .marginText {
 	display: block;
-	width: 70%;
+	width: 80%;
 	margin: 5% auto;
 }
 
@@ -349,12 +350,12 @@ a.resButton {
 	grid-area: skills3;
 }
 
-.resumeList ul {
+.itemList ul {
 	list-style: square inside url(images/diamond.png);
 	margin-bottom: 3%;
 }
 
-.resumeList ul li {
+.itemList ul li {
 	margin-bottom: 1em;
 }
 
@@ -379,18 +380,18 @@ a.resButton {
 	font-size: 1.7em;
 }
 
-a.conButton {
+a.largeButton {
 	display: inline-block;
 	color: #fff;
 	background-color: #005f73;
 	font-family: 'Eczar', serif;
 	font-weight: 600;
-	font-size: 1em;
+	font-size: 1.5em;
 	text-align: center;
 	text-decoration: none;
 	padding: .2em;
-	width: 70%;
-	margin-top: 5%;
+	width: 60%;
+	margin: 5% auto;
 	border-radius: 10px;
 }
 
@@ -698,10 +699,83 @@ footer p {
 	}
 
 	#mainNav ul li {
+		font-size: 1.5em;
 		padding-left: 1em;
 		border-left: 7px solid #005f73;
 		border-right: 7px solid #005f73;
 		text-align: left;
+	}
+
+	@keyframes menuSelW {
+		0% { border-left: 7px solid #005f73; }
+		100% { border-left: 7px solid #5f008c; }
+	}
+
+	#mainNav ul li.current {
+		border-left: 7px solid #005f73;
+		animation: .2s ease-in 0s 1 menuSelW;
+		animation-fill-mode: forwards;
+	}
+
+	.coPic {
+		width: 55%;
+	}
+
+	.sideText {
+		margin-top: 5%;
+	}
+
+	.sideText h1 {
+		font-size: 2.1
+	}
+
+	.sideText p {
+		font-size: 1.3em;
+	}
+
+	.homeText {
+		width: 80%;
+	}
+
+}
+
+@media screen and (min-width: 1400px) {
+
+	body {
+		display: grid;
+		grid-template-columns: 320px auto;
+		ms-grid-columns: 320px auto;
+		grid-template-areas:
+		"sidebar content"
+		"sidebar footer";
+	}
+
+	aside {
+		padding: 0;
+	}
+
+	.sideInner {
+		width: 300px;
+		position: fixed;
+		margin-left: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		ms-grid-columns: 1fr;
+		grid-template-areas:
+		"portrait"
+		"title"
+		"navigation";
+	}
+
+	#mainNav {
+		width: 80%;
+		margin: 20% auto;
+	}
+
+	#mainNav ul li {
+		font-size: 1.9em;
 	}
 
 	@keyframes menuSelW {
@@ -721,6 +795,14 @@ footer p {
 
 	.sideText {
 		margin-top: 5%;
+	}
+
+	.sideText h1 {
+		font-size: 2.3;
+	}
+
+	.sideText p {
+		font-size: 1.4em;
 	}
 
 	.homeText {
