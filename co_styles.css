@@ -811,6 +811,12 @@ footer p {
 
 }
 
+@media screen and (min-width: 1400px) {
+	.proText {
+		margin-top: 4em;
+	}
+}
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
 	body {
@@ -892,7 +898,7 @@ footer p {
 		display: block;
 		float: left;
 		width: 45%;
-		margin-top: 50pxS;
+		margin-top: 50px;
 	}
 
 	.boxOutline {
